@@ -13,7 +13,7 @@ public class Main {
 
 //             Class die de sql query bouwt
             String sqlCode = "use test;" +
-                    "select * from aa";
+                             "select * from aa";
 
             ResultSet rs = statement.executeQuery(sqlCode);
 
