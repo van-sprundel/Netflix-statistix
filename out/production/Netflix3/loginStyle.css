@@ -8,7 +8,6 @@
 #emailField, #passField {
     -fx-border-color: #666666;
 }
-
 #emailField:hover, #passField:hover {
     -fx-border-color: #00e954;
 }
