@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6dea6b6-4ffa-4efa-88eb-637d1e736129" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Sprites/Logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/currLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/currLogin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/loginStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/loginStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/currLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/currLogin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loginStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/loginStyle.css" afterDir="false" />
-    </list>
+    <list default="true" id="e6dea6b6-4ffa-4efa-88eb-637d1e736129" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +25,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
@@ -44,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -152,7 +145,7 @@
     <property name="DatabaseDriversLRU" value="sqlserver" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579010537280" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579010538145" />
     <property name="last_opened_file_path" value="C:/Program Files/Java/javafx-sdk-13.0.1/lib" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -216,12 +209,12 @@
       <option name="presentableId" value="Default" />
       <updated>1579008689659</updated>
       <workItem from="1579008695174" duration="474000" />
-      <workItem from="1579009259042" duration="1278000" />
+      <workItem from="1579009259042" duration="1287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1752000" />
+    <option name="totallyTimeSpent" value="1761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -236,7 +229,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32977587" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32977587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -295,6 +288,9 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -304,9 +300,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
