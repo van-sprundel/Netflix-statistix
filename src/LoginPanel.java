@@ -8,10 +8,10 @@ public class LoginPanel extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         // Set all panels
-        Parent root = FXMLLoader.load(getClass().getResource("Interface/currLogin.fxml"));
-        Parent root2 = FXMLLoader.load(getClass().getResource("Interface/Login.fxml"));
+        Parent login = FXMLLoader.load(getClass().getResource("Interface/currLogin.fxml"));
+        Parent Dashboard = FXMLLoader.load(getClass().getResource("Interface/Tableview.fxml"));
 
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(login);
 
         stage.setTitle("studentennummers enzo");
         stage.setScene(scene);
