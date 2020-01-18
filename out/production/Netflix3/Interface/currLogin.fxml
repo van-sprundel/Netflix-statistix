@@ -31,7 +31,7 @@
                      <children>
                         <TextField id="emailField" fx:id="email" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-1.0" prefHeight="32.0" prefWidth="290.0" promptText="Email" style="-fx-background-color: BLACK; -fx-border-width: 2;" stylesheets="@../loginStyle.css" />
                         <PasswordField id="passField" fx:id="pass" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-1.0" prefHeight="32.0" prefWidth="290.0" promptText="Password" style="-fx-background-color: BLACK; -fx-border-width: 2;" stylesheets="@../loginStyle.css" />
-                        <Button id="loginButton" fx:id="signin" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" disable="false" ellipsisString="" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="290.0" style="" stylesheets="@../loginStyle.css" text="Sign in" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" underline="false" visible="true" wrapText="false" />
+                        <Button id="loginButton" fx:id="signin" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" disable="false" ellipsisString="" graphicTextGap="0.0" mnemonicParsing="false" onAction="#login" onMouseDragReleased="#doThis" prefHeight="32.0" prefWidth="290.0" style="" stylesheets="@../loginStyle.css" text="Sign in" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" underline="false" visible="true" wrapText="false" />
                      </children>
                   </VBox>
                   <Hyperlink text="Forgot your password?">
