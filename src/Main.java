@@ -11,9 +11,9 @@ public class Main {
             Connection connection = DriverManager.getConnection(connectionUrl);
             Statement statement = connection.createStatement();
 
-//             Class die de sql query bouwt
+//          Class die de sql query bouwt is nodig
             String sqlCode = "use test;" +
-                             "select * from aa";
+                    "select * from aa";
 
             ResultSet rs = statement.executeQuery(sqlCode);
 

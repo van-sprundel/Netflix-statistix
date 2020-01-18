@@ -1,12 +1,17 @@
 package Interface;
 
-import javafx.event.*;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.fxml.Initializable;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class LoginController {
-    @FXML private TextField userField;
-    @FXML private TextField passField;
-    @FXML private Button loginButton;
+public class LoginController implements Initializable {
 
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+    }
 }

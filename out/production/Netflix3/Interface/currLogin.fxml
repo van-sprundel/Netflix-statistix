@@ -16,7 +16,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<StackPane id="StackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="980.0" prefWidth="1200.0" style="-fx-background-color: BLACK;" stylesheets="@../loginStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane id="StackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="980.0" prefWidth="1200.0" style="-fx-background-color: BLACK;" stylesheets="@../loginStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface.LoginController">
    <children>
       <ImageView fitHeight="200.0" fitWidth="200.0" translateY="-300.0">
          <image>
@@ -29,9 +29,9 @@
                <children>
                   <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" spacing="11.0">
                      <children>
-                        <TextField id="emailField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-1.0" prefHeight="32.0" prefWidth="290.0" promptText="Email" style="-fx-background-color: BLACK; -fx-border-width: 2;" stylesheets="@../loginStyle.css" />
-                        <PasswordField id="passField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-1.0" prefHeight="32.0" prefWidth="290.0" promptText="Password" style="-fx-background-color: BLACK; -fx-border-width: 2;" stylesheets="@../loginStyle.css" />
-                        <Button id="loginButton" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" disable="false" ellipsisString="" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="290.0" style="" stylesheets="@../loginStyle.css" text="Sign in" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" underline="false" visible="true" wrapText="false" />
+                        <TextField id="emailField" fx:id="email" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-1.0" prefHeight="32.0" prefWidth="290.0" promptText="Email" style="-fx-background-color: BLACK; -fx-border-width: 2;" stylesheets="@../loginStyle.css" />
+                        <PasswordField id="passField" fx:id="pass" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-1.0" prefHeight="32.0" prefWidth="290.0" promptText="Password" style="-fx-background-color: BLACK; -fx-border-width: 2;" stylesheets="@../loginStyle.css" />
+                        <Button id="loginButton" fx:id="signin" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" disable="false" ellipsisString="" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="290.0" style="" stylesheets="@../loginStyle.css" text="Sign in" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" underline="false" visible="true" wrapText="false" />
                      </children>
                   </VBox>
                   <Hyperlink text="Forgot your password?">
