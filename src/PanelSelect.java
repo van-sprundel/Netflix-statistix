@@ -11,6 +11,7 @@ import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -50,6 +51,7 @@ public class PanelSelect extends Application implements Initializable {
     public TextField newPostcode;
     public Button signup;
     public Text errorCreate;
+    public Text welcomeMsg;
 
     public void setAccount() {
         RWDatabase database = new RWDatabase();
@@ -91,7 +93,13 @@ public class PanelSelect extends Application implements Initializable {
             error.setText("Please type in your password");
         } else if (database.validated) {
             Stage stage;
-            Parent root = FXMLLoader.load(getClass().getResource("Interface/TableView.fxml"));
+            Parent root;
+
+            if (inputEmail.equals("ramon@gmail.com")) {
+                root = FXMLLoader.load(getClass().getResource("Interface/TableView.fxml"));
+            } else {
+                root = FXMLLoader.load(getClass().getResource("Interface/mainMenu.fxml"));
+            }
             stage = (Stage) signin.getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setMaximized(false);

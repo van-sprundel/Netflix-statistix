@@ -66,6 +66,7 @@ public class RWDatabase {
         makeConnection(tempCode);
     }
     public void requestPass(String name) {
+        /* TODO */
     }
 
 }

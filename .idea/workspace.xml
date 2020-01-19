@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6dea6b6-4ffa-4efa-88eb-637d1e736129" name="Default Changelist" comment="ut it">
-      <change afterPath="$PROJECT_DIR$/src/Interface/newUser.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/Login.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/currLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/currLogin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/tableView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/tableView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Netflix3/PanelSelect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/PanelSelect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/ReadDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Login.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/currLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/currLogin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/tableView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/tableView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/RWDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/RWDatabase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanelSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelSelect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RWDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RWDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RWDatabase.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RWDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="268">
+              <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -76,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PanelSelect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="100" column="25" lean-forward="true" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+            <state relative-caret-position="350">
+              <caret line="109" column="32" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,7 +196,7 @@
     <property name="DatabaseDriversLRU" value="sqlserver" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579459080152" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579461231083" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="C:/Program Files/Java/javafx-sdk-13.0.1/lib" />
@@ -292,12 +285,12 @@
       <workItem from="1579025315101" duration="3644000" />
       <workItem from="1579367434488" duration="2689000" />
       <workItem from="1579434414689" duration="1288000" />
-      <workItem from="1579435725871" duration="21155000" />
+      <workItem from="1579435725871" duration="22896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31984000" />
+    <option name="totallyTimeSpent" value="33725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="436" width="1936" height="1096" extended-state="6" />
@@ -348,13 +341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="899" selection-start-line="899" selection-end-line="899" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-13.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="829" selection-start-line="829" selection-end-line="829" />
         </state>
       </provider>
     </entry>
@@ -457,17 +443,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-13.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="829" selection-start-line="829" selection-end-line="829" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/RWDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="268">
+          <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PanelSelect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="100" column="25" lean-forward="true" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+        <state relative-caret-position="350">
+          <caret line="109" column="32" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
