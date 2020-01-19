@@ -10,26 +10,23 @@ public class ReadDatabase {
     private String address;
     // Profile
     private String age;
-    // ExecuteCode
-    private String sqlCode;
+    public boolean validated = false;
 
-
-    private void makeConnection(String sqlCode) {
-        this.sqlCode = sqlCode;
+    public void makeConnection(String sqlCode) {
         try {
             Connection connection = DriverManager.getConnection(connectionUrl);
 
             Statement statement = connection.createStatement();
             System.out.println(sqlCode);
             ResultSet rs = statement.executeQuery(sqlCode);
-
-            while (rs.next()) {
-                String email = rs.getString("Email");
-                String name = rs.getString("Name");
-                String address = rs.getString("Address");
-                String postalcode = rs.getString("PostalCode");
-                System.out.format("| %16s | %-24s | %-16s | %-24s |\n", email,name,address,postalcode);
-            }   System.out.println(String.format("| %16s | %-24s | %-16s | %-24s |\n", " ", " ", " ", " ").replace(" ", "-"));
+                while (rs.next()) {
+                    String email = rs.getString("Email");
+                    String name = rs.getString("Name");
+                    String address = rs.getString("Address");
+                    String postalcode = rs.getString("PostalCode");
+                    validated = true;
+                    System.out.format("| %16s | %-24s | %-16s | %-24s |\n", email,name,address,postalcode);
+                }  System.out.println(String.format("| %16s | %-24s | %-16s | %-24s |\n", " ", " ", " ", " ").replace(" ", "-"));
         } catch (
                 SQLException e) {
             e.printStackTrace();
@@ -53,12 +50,22 @@ public class ReadDatabase {
 
         String tempCode = "USE [Netflix Statistix Database];" +
                 "SELECT * FROM Account " +
-                "WHERE Email = "+this.email;
+                "WHERE Email = "+this.email+" AND " +
+                "Password = "+this.pass;
         makeConnection(tempCode);
     }
 
+    public void delAccount(String email, String pass) {
+        this.email = "'"+email+"'";
+        this.pass = "'"+pass+"'";
+
+        String tempCode = "USE [Netflix Statistix Database];" +
+                "DELETE FROM Account " +
+                "WHERE Email = "+this.email+" AND " +
+                "WHERE Password = "+this.pass;
+        makeConnection(tempCode);
+    }
     public void requestPass(String name) {
     }
-
 
 }
