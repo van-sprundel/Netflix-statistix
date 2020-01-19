@@ -41,7 +41,7 @@
                      </font>
                   </Hyperlink>
                   <Line endX="145.0" startX="-145.0" stroke="#303030" strokeType="CENTERED" />
-                  <Hyperlink font="$x1" text="Create an Account" />
+                  <Hyperlink fx:id="newUser" font="$x1" onMouseClicked="#newUser" text="Create an Account" />
                   <Text fx:id="error" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="200.0">
                      <font>
                         <Font name="SansSerif Regular" size="13.0" />

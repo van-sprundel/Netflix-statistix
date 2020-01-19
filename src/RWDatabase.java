@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class ReadDatabase {
+public class RWDatabase {
     private String connectionUrl = "jdbc:sqlserver://localhost:1433;integratedSecurity=true";
     // Account
     private String email;

@@ -35,13 +35,13 @@
                         <Button id="loginButton" fx:id="signin" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" disable="false" ellipsisString="" graphicTextGap="0.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="32.0" prefWidth="290.0" style="" stylesheets="@../loginStyle.css" text="Sign in" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" underline="false" visible="true" wrapText="false" />
                      </children>
                   </VBox>
-                  <Hyperlink text="Forgot your password?">
+                  <Hyperlink fx:id="forgotPass" text="Forgot your password?">
                      <font>
                         <Font name="SansSerif Regular" size="13.0" fx:id="x1" />
                      </font>
                   </Hyperlink>
                   <Line endX="145.0" startX="-145.0" stroke="#303030" strokeType="CENTERED" />
-                  <Hyperlink font="$x1" text="Create an Account" />
+                  <Hyperlink fx:id="newUser" font="$x1" onMouseClicked="#newUser" text="Create an Account" />
                   <Text fx:id="error" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="200.0">
                      <font>
                         <Font name="SansSerif Regular" size="13.0" />

@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6dea6b6-4ffa-4efa-88eb-637d1e736129" name="Default Changelist" comment="ut it">
+      <change afterPath="$PROJECT_DIR$/src/Interface/newUser.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/Login.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/currLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/currLogin.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Netflix3/PanelSelect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/PanelSelect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/ReadDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/ReadDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/ReadDatabase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/Login.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/currLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/currLogin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/tableView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/tableView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanelSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelSelect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RWDatabase.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,24 +64,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ReadDatabase.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RWDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="189">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PanelSelect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="100" column="25" lean-forward="true" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PanelSelect.java">
+        <entry file="file://$PROJECT_DIR$/src/Interface/newUser.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="58" column="44" lean-forward="true" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2630#2631#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="253">
+              <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -86,8 +99,8 @@
         <entry file="file://$PROJECT_DIR$/src/Interface/currLogin.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="34" column="234" selection-start-line="34" selection-start-column="234" selection-end-line="34" selection-end-column="234" />
+            <state relative-caret-position="253">
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -104,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Database.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+            <state relative-caret-position="128">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -139,8 +152,10 @@
         <option value="$PROJECT_DIR$/Database.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/915b00e8-aa96-46a9-b419-df41c98fa591/console.sql" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/PanelSelect.java" />
+        <option value="$PROJECT_DIR$/src/Interface/newUser.fxml" />
         <option value="$PROJECT_DIR$/src/ReadDatabase.java" />
+        <option value="$PROJECT_DIR$/src/RWDatabase.java" />
+        <option value="$PROJECT_DIR$/src/PanelSelect.java" />
       </list>
     </option>
   </component>
@@ -151,8 +166,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1795" />
-    <option name="y" value="571" />
+    <option name="x" value="1663" />
+    <option name="y" value="501" />
     <option name="width" value="1936" />
     <option name="height" value="1102" />
   </component>
@@ -178,18 +193,6 @@
               <item name="Netflix3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Netflix3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Netflix3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Interface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Netflix3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Netflix3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Sprites" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -200,7 +203,7 @@
     <property name="DatabaseDriversLRU" value="sqlserver" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579449996074" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579459080152" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="C:/Program Files/Java/javafx-sdk-13.0.1/lib" />
@@ -210,9 +213,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ramon\Documents\IdeaProjects\Netflix3\src\Interface" />
-      <recent name="C:\Users\ramon\Documents\IdeaProjects\Netflix3\src" />
       <recent name="C:\Users\ramon\Documents\IdeaProjects\Netflix3\src\Sprites" />
+      <recent name="C:\Users\ramon\Documents\IdeaProjects\Netflix3\src" />
+      <recent name="C:\Users\ramon\Documents\IdeaProjects\Netflix3\src\Interface" />
       <recent name="C:\Users\ramon\Documents\IdeaProjects\TMCProjects\avansbreda-programmeren_2-2019-2020\Netflix3\src" />
     </key>
   </component>
@@ -289,12 +292,12 @@
       <workItem from="1579025315101" duration="3644000" />
       <workItem from="1579367434488" duration="2689000" />
       <workItem from="1579434414689" duration="1288000" />
-      <workItem from="1579435725871" duration="14245000" />
+      <workItem from="1579435725871" duration="21155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25074000" />
+    <option name="totallyTimeSpent" value="31984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="436" width="1936" height="1096" extended-state="6" />
@@ -309,7 +312,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" weight="0.32977587" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32977587" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32977587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -363,13 +366,6 @@
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/loginStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interface/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -407,14 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interface/currLogin.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="34" column="234" selection-start-line="34" selection-start-column="234" selection-end-line="34" selection-end-column="234" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/915b00e8-aa96-46a9-b419-df41c98fa591/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -422,10 +410,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Database.sql">
+    <entry file="file://$PROJECT_DIR$/src/loginStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        <state relative-caret-position="368">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sprites/Logo32.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/newUser.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/currLogin.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/javafx-sdk-13.0.1/lib/javafx.base.jar!/com/sun/javafx/reflect/Trampoline.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -436,21 +450,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PanelSelect.java">
+    <entry file="file://$PROJECT_DIR$/Database.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="58" column="44" lean-forward="true" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2630#2631#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="128">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReadDatabase.java">
+    <entry file="file://$PROJECT_DIR$/src/RWDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="189">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PanelSelect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="100" column="25" lean-forward="true" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -7,22 +7,24 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 
 public class PanelSelect extends Application implements Initializable {
+    private boolean isPopup = false;
+
     @Override
     public void start(Stage stage) throws Exception {
         Parent login = FXMLLoader.load(getClass().getResource("Interface/currLogin.fxml"));
 //        Parent table = FXMLLoader.load(getClass().getResource("Interface/Login.fxml"));
         // Set all panels
-
+        stage.getIcons().add(new Image("/Sprites/Logo.png"));
         Scene scene = new Scene(login);
         stage.setScene(scene);
         stage.setTitle("studentennummers enzo");
@@ -35,27 +37,51 @@ public class PanelSelect extends Application implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
 
+    // All FXML Methods and Variables
     @FXML
     private Button signin;
     public TextField email;
     public PasswordField pass;
     public Text error;
+    public TextField newName;
+    public TextField newEmail;
+    public TextField newPass;
+    public TextField newAddress;
+    public TextField newPostcode;
+    public Button signup;
+    public Text errorCreate;
 
-    @FXML
-    public void setAccount(String email, String pass, String name, String address, String postalcode) {
-        ReadDatabase database = new ReadDatabase();
-        database.setAccount(email, name, address, postalcode, pass);
+    public void setAccount() {
+        RWDatabase database = new RWDatabase();
+
+        String name = newName.getText();
+        String email = newEmail.getText();
+        String pass = newPass.getText();
+        String address = newAddress.getText();
+        String postalcode = newPostcode.getText();
+        if (name.isEmpty() || email.isEmpty() || pass.isEmpty() || address.isEmpty() || postalcode.isEmpty()) {
+            errorCreate.setText("Fill in all fields");
+        } else if (!email.contains("@") || !email.contains(".")) {
+            errorCreate.setText("Invalid email");
+        } else {
+            errorCreate.setText(" ");
+            getAccount(email, pass);
+            if (database.validated) {
+                errorCreate.setText("This account already exists");
+            } else {
+                database.setAccount(email, name, address, postalcode, pass);
+                database.validated = false;
+            }
+        }
     }
 
-    @FXML
     public void getAccount(String emailInput, String passInput) {
-        ReadDatabase database = new ReadDatabase();
+        RWDatabase database = new RWDatabase();
         database.getAccount(emailInput, passInput);
     }
 
-    @FXML
     public void login() throws IOException {
-        ReadDatabase database = new ReadDatabase();
+        RWDatabase database = new RWDatabase();
         String inputEmail = email.getText();
         String inputPass = pass.getText();
         database.getAccount(inputEmail,inputPass);
@@ -65,17 +91,35 @@ public class PanelSelect extends Application implements Initializable {
             error.setText("Please type in your password");
         } else if (database.validated) {
             Stage stage;
-            Parent root;
+            Parent root = FXMLLoader.load(getClass().getResource("Interface/TableView.fxml"));
             stage = (Stage) signin.getScene().getWindow();
-            root = FXMLLoader.load(getClass().getResource("Interface/TableView.fxml"));
             Scene scene = new Scene(root);
+            stage.setMaximized(false);
             stage.setScene(scene);
+            stage.sizeToScene();
+            stage.setMaximized(true);
             stage.show();
-        } else { error.setText("This account doesn't exist"); }
+            database.validated = false;
+
+        } else { error.setText("Login failed"); }
     }
 
-    @FXML
-    public void error(ActionEvent e) {
-        error.setText("Sign in button pressed");
+    public  void newUser() throws IOException{
+        if (!isPopup) {
+            isPopup = true;
+
+            error.setText(" ");
+            Stage popupwindow = new Stage();
+            Parent root = FXMLLoader.load(getClass().getResource("Interface/newUser.fxml"));
+            Scene scene = new Scene(root);
+
+            popupwindow.setTitle("Create account");
+            popupwindow.setScene(scene);
+            popupwindow.showAndWait();
+            isPopup = false;
+        } else {
+            error.setText("You're already creating an account");
+        }
+
     }
 }
