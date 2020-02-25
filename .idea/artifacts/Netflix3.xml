@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Netflix3">
+    <output-path>$PROJECT_DIR$/out/artifacts/Netflix3</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="PanelSelect" />
+        <option name="description" value="gasdgasdgadsg" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="gsdgsdgasd" />
+        <option name="vendor" value="gsdagdsgasd" />
+        <option name="version" value="1" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Netflix3.jar">
+        <element id="module-output" name="Netflix3" />
+      </element>
+    </root>
+  </artifact>
+</component>
