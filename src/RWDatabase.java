@@ -1,7 +1,7 @@
 import java.sql.*;
 
 public class RWDatabase {
-    private String connectionUrl = "jdbc:sqlserver://localhost:1433;integratedSecurity=true";
+    public String connectionUrl = "jdbc:sqlserver://localhost:1433;integratedSecurity=true";
     // Account
     private String email;
     private String pass;
@@ -17,9 +17,11 @@ public class RWDatabase {
             Connection connection = DriverManager.getConnection(connectionUrl);
 
             Statement statement = connection.createStatement();
-            System.out.println(sqlCode);
+//            System.out.println(sqlCode);
             ResultSet rs = statement.executeQuery(sqlCode);
                 while (rs.next()) {
+
+
                     String email = rs.getString("Email");
                     String name = rs.getString("Name");
                     String address = rs.getString("Address");
@@ -44,7 +46,7 @@ public class RWDatabase {
                           "VALUES ("+this.email+","+this.name+","+this.address+","+this.postalCode+","+this.pass+");";
         makeConnection(tempCode);
     }
-    public void getAccount(String email, String pass) {
+    public void readAccount(String email, String pass) {
         this.email = "'"+email+"'";
         this.pass = "'"+pass+"'";
 
