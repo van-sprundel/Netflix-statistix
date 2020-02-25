@@ -4,6 +4,6 @@ import javafx.application.Application;
 
 public class Main {
     public static void main(String[] args) {
-        Application.launch(LoginPanel.class, args);
+        Application.launch(PanelSelect.class, args);
     }
 }

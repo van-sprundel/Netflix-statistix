@@ -12,7 +12,7 @@ import java.util.ResourceBundle;
 
 public class TableView implements Initializable {
     private RWDatabase database = new RWDatabase();
-    private LoginPanel loginPanel = new LoginPanel();
+    private PanelSelect loginPanel = new PanelSelect();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

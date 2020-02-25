@@ -15,12 +15,12 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class LoginPanel extends Application implements Initializable {
+public class PanelSelect extends Application implements Initializable {
     private boolean isPopup = false;
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent login = FXMLLoader.load(getClass().getResource("Interface/currLogin.fxml"));
+        Parent login = FXMLLoader.load(getClass().getResource("Interface/LoginPanel.fxml"));
 //        Parent table = FXMLLoader.load(getClass().getResource("Interface/Login.fxml"));
         // Set all panels
         stage.getIcons().add(new Image("/Sprites/Logo.png"));
