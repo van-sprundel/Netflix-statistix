@@ -96,7 +96,7 @@ public class PanelSelect extends Application implements Initializable {
             Parent root;
 
             if (inputEmail.equals("ramon@gmail.com")) {
-                root = FXMLLoader.load(getClass().getResource("Interface/TableView.fxml"));
+                root = FXMLLoader.load(getClass().getResource("Interface/tableView.fxml"));
             } else {
                 root = FXMLLoader.load(getClass().getResource("Interface/mainMenu.fxml"));
             }
