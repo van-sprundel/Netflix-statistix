@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -49,18 +50,17 @@ public class PanelSelect extends Application implements Initializable {
     public TextField newPostcode;
     public Button signup;
     public Text errorCreate;
-    public Text welcomeMsg;
 
-    /* Create account with validation */
+    /* Sign up with validation */
     public void setAccount() {
         RWDatabase database = new RWDatabase();
         String name = newName.getText();
         String email = newEmail.getText();
         String pass = newPass.getText();
         String address = newAddress.getText();
-        String postalcode = newPostcode.getText();
+        String postalCode = newPostcode.getText();
 
-        if (name.isEmpty() || email.isEmpty() || pass.isEmpty() || address.isEmpty() || postalcode.isEmpty()) {
+        if (name.isEmpty() || email.isEmpty() || pass.isEmpty() || address.isEmpty() || postalCode.isEmpty()) {
             errorCreate.setText("Fill in all fields");
         } else if (!email.contains("@") || !email.contains(".")) {
             errorCreate.setText("Invalid email");
@@ -70,23 +70,25 @@ public class PanelSelect extends Application implements Initializable {
             if (database.validated) {
                 errorCreate.setText("This account already exists");
             } else {
-                database.setAccount(email, name, address, postalcode, pass);
-                database.validated = false;
+                database.setAccount(email, name, address, postalCode, pass, (byte) 0);
+                Stage stage = (Stage) signup.getScene().getWindow();
+                stage.close();
             }
         }
     }
+
     /* Check if account is valid */
     public void readAccount(String emailInput, String passInput) {
         RWDatabase database = new RWDatabase();
-        database.readAccount(emailInput, passInput);
+        database.checkAccount(emailInput, passInput);
     }
 
-    /* Loggin button trigger */
+    /* Login button trigger */
     public void login() throws IOException {
         RWDatabase database = new RWDatabase();
         String inputEmail = email.getText();
         String inputPass = pass.getText();
-        database.readAccount(inputEmail,inputPass);
+        database.checkAccount(inputEmail, inputPass);
         if (email.getText().trim().isEmpty()) {
             error.setText("Please type in your email");
         } else if (pass.getText().trim().isEmpty()) {
@@ -94,8 +96,7 @@ public class PanelSelect extends Application implements Initializable {
         } else if (database.validated) {
             Stage stage;
             Parent root;
-
-            if (inputEmail.equals("ramon@gmail.com")) {
+            if (database.checkAdmin(inputEmail, inputPass) == 1) {
                 root = FXMLLoader.load(getClass().getResource("Interface/tableView.fxml"));
             } else {
                 root = FXMLLoader.load(getClass().getResource("Interface/mainMenu.fxml"));
@@ -105,15 +106,17 @@ public class PanelSelect extends Application implements Initializable {
             stage.setMaximized(false);
             stage.setScene(scene);
             stage.sizeToScene();
-            stage.setMaximized(true);
+//            stage.setMaximized(true);
             stage.show();
             database.validated = false;
 
-        } else { error.setText("Login failed"); }
+        } else {
+            error.setText("Login failed");
+        }
     }
 
     /* Popup to create account */
-    public  void newUser() throws IOException{
+    public void newUser() throws IOException {
         if (!isPopup) {
             isPopup = true;
 

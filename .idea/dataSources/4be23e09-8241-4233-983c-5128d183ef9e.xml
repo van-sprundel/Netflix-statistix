@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@localhost">
-  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.14">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.17">
     <root id="1">
       <ServerVersion>15.0.2000</ServerVersion>
     </root>
     <database id="2" parent="1" name="Netflix Statistix Database">
       <ObjectId>7</ObjectId>
       <Current>1</Current>
-      <Visible>1</Visible>
       <Collation>Latin1_General_CI_AS</Collation>
     </database>
     <database id="3" parent="1" name="master">
@@ -68,7 +67,6 @@
       <ObjectId>1</ObjectId>
       <IntrospectionTimestamp>2020-02-25.14:04:55.900</IntrospectionTimestamp>
       <Current>1</Current>
-      <Visible>1</Visible>
     </schema>
     <schema id="20" parent="2" name="guest">
       <ObjectId>2</ObjectId>
