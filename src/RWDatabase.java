@@ -38,9 +38,9 @@ public class RWDatabase {
         }
     }
 
-    public void setAccount(String email, String pass, String name, String address, String postalCode, byte admin) {
+    public void setAccount(String email, String name, String address, String postalCode, String pass, byte admin) {
         String tempCode = "USE [Netflix Statistix Database];" +
-                "INSERT INTO Account " +
+                "INSERT INTO Account(Email,Name,Address,Postalcode,Password,Admin) " +
                 "VALUES (" +
                 "'" + email + "'" +
                 "," + "'" + name + "'" +
@@ -55,6 +55,8 @@ public class RWDatabase {
         String tempCode = "USE [Netflix Statistix Database];" +
                 "SELECT * FROM Account " +
                 "WHERE Email = " + "'" + email + "'" + " AND " +
+                "Password = " + "'" + pass + "'" + " OR " +
+                "Name = " + "'" + email + "'" + " AND " +
                 "Password = " + "'" + pass + "'";
         makeConnection(tempCode);
     }

@@ -5,7 +5,7 @@ and movies.
 This program is only local, 
 ## Installation
 - Start your IDE and open the repository
-- Run the SQL code step by step
+- Follow the instructions in the SQL Code
 - Open up the tab ‘Databases’, Click Data Source > Microsoft SQL Server and paste this in URL: 
 ```bash
 ‘jdbc:sqlserver://localhost\MSSQLSERVER;database=Netflix Statistix Database’
