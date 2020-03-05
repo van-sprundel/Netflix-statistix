@@ -1,0 +1,64 @@
+.root, .tab-pane, .viewport, .tab-pane, .tab-header-area, .tab-header-background, .column-header-background, .tab, .table-view, .filler {
+    -fx-background-color: #222222;
+    -fx-font-weight: bold;
+}
+
+.tab .tab-label, .label, .button, .scroll-pane {
+    -fx-text-fill: #DCDCDC;
+}
+
+.button, .scroll-bar {
+    -fx-background-color: #111111;
+}
+
+.button:hover, .scroll-bar .thumb {
+    -fx-background-color: #333333;
+}
+
+.table-view, .button {
+    -fx-border-color: #828790;
+    -fx-border-radius: 1px;
+}
+
+.table-view:hover, .button:hover {
+    -fx-border-color: #ffe6e6;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #212121;
+
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view .column-header-background, .table-row-cell:even {
+    -fx-background-color: #222222;
+}
+
+.line {
+    -fx-border-color: rgba(0, 0, 0, 0);
+}
+
+.table-view .column-header-background .label {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.table-row-cell:hover {
+    -fx-background-color: #111111;
+}
+.table-row-cell:selected {
+    -fx-background-color: #111111;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+    -fx-text-fill: white;
+}

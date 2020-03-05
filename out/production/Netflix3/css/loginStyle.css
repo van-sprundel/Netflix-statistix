@@ -2,7 +2,6 @@
     -fx-background-color: #E50914;
 }
 #loginButton:hover,#loginButton:focused {
-    -fx-animated: true;
     -fx-background-color: #9c060e;
 }
 #emailField, #passField {

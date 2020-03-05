@@ -7,19 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6dea6b6-4ffa-4efa-88eb-637d1e736129" name="Default Changelist" comment="ut it">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interface/css/table.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/LoginPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/LoginPanel.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/loginWhite.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/loginWhite.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/newTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/newTable.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/newUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/newUser.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Netflix3/LoginPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/LoginPanel.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Netflix3/PanelSelect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/PanelSelect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/TableController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/TableController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/loginStyle.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Netflix3/loginWhite.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/loginWhite.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/newTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/newTable.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Netflix3/newUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/newUser.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/LoginPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/LoginPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/loginPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/loginPanel.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/loginWhite.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/loginWhite.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/newTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/newTable.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/newUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/newUser.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanelSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelSelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loginStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/css/loginStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +65,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -82,6 +90,7 @@
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -96,6 +105,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ramon\Documents\IdeaProjects\Netflix3\src\Interface\css" />
       <recent name="C:\Users\ramon\Documents\IdeaProjects\Netflix3\src" />
       <recent name="C:\Users\ramon\Documents\IdeaProjects\Netflix3\src\Interface" />
       <recent name="C:\Users\ramon\Documents\IdeaProjects\Netflix3\src\Sprites" />
@@ -189,7 +199,7 @@
       <workItem from="1583344635421" duration="285000" />
       <workItem from="1583345939948" duration="609000" />
       <workItem from="1583418720609" duration="80000" />
-      <workItem from="1583418874908" duration="350000" />
+      <workItem from="1583418874908" duration="23499000" />
     </task>
     <servers />
   </component>
@@ -197,6 +207,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="198" key="#Inspections" timestamp="1583443300259">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="198" key="#Inspections/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583443300259" />
     <state x="552" y="198" key="#Notifications" timestamp="1582898018993">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -213,6 +227,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582909959047" />
+    <state x="765" y="243" key="#com.intellij.ide.util.MemberChooser" timestamp="1583420137710">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="765" y="243" key="#com.intellij.ide.util.MemberChooser/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583420137710" />
     <state x="640" y="268" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582894795974">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -225,45 +243,45 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="281" key="FileChooserDialogImpl/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583067201021" />
-    <state width="1876" height="248" key="GridCell.Tab.0.bottom" timestamp="1583418998047">
+    <state width="1876" height="340" key="GridCell.Tab.0.bottom" timestamp="1583446203677">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="248" key="GridCell.Tab.0.bottom/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583418998047" />
+    <state width="1876" height="340" key="GridCell.Tab.0.bottom/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583446203677" />
     <state width="1876" height="248" key="GridCell.Tab.0.bottom/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582938329497" />
-    <state width="1876" height="248" key="GridCell.Tab.0.center" timestamp="1583418998046">
+    <state width="1876" height="340" key="GridCell.Tab.0.center" timestamp="1583446203676">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="248" key="GridCell.Tab.0.center/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583418998046" />
+    <state width="1876" height="340" key="GridCell.Tab.0.center/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583446203676" />
     <state width="1876" height="248" key="GridCell.Tab.0.center/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582938329497" />
-    <state width="1876" height="248" key="GridCell.Tab.0.left" timestamp="1583418998046">
+    <state width="1876" height="340" key="GridCell.Tab.0.left" timestamp="1583446203676">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="248" key="GridCell.Tab.0.left/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583418998046" />
+    <state width="1876" height="340" key="GridCell.Tab.0.left/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583446203676" />
     <state width="1876" height="248" key="GridCell.Tab.0.left/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582938329497" />
-    <state width="1876" height="248" key="GridCell.Tab.0.right" timestamp="1583418998046">
+    <state width="1876" height="340" key="GridCell.Tab.0.right" timestamp="1583446203676">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="248" key="GridCell.Tab.0.right/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583418998046" />
+    <state width="1876" height="340" key="GridCell.Tab.0.right/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583446203676" />
     <state width="1876" height="248" key="GridCell.Tab.0.right/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582938329497" />
-    <state width="1876" height="340" key="GridCell.Tab.1.bottom" timestamp="1582936658520">
-      <screen x="1920" y="444" width="1920" height="1080" />
+    <state width="1876" height="340" key="GridCell.Tab.1.bottom" timestamp="1583446203677">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.bottom/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582933882251" />
+    <state width="1876" height="340" key="GridCell.Tab.1.bottom/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583446203677" />
     <state width="1876" height="340" key="GridCell.Tab.1.bottom/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582936658520" />
-    <state width="1876" height="340" key="GridCell.Tab.1.center" timestamp="1582936658520">
-      <screen x="1920" y="444" width="1920" height="1080" />
+    <state width="1876" height="340" key="GridCell.Tab.1.center" timestamp="1583446203677">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.center/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582933882251" />
+    <state width="1876" height="340" key="GridCell.Tab.1.center/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583446203677" />
     <state width="1876" height="340" key="GridCell.Tab.1.center/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582936658520" />
-    <state width="1876" height="340" key="GridCell.Tab.1.left" timestamp="1582936658520">
-      <screen x="1920" y="444" width="1920" height="1080" />
+    <state width="1876" height="340" key="GridCell.Tab.1.left" timestamp="1583446203677">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.left/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582933882251" />
+    <state width="1876" height="340" key="GridCell.Tab.1.left/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583446203677" />
     <state width="1876" height="340" key="GridCell.Tab.1.left/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582936658520" />
-    <state width="1876" height="340" key="GridCell.Tab.1.right" timestamp="1582936658520">
-      <screen x="1920" y="444" width="1920" height="1080" />
+    <state width="1876" height="340" key="GridCell.Tab.1.right" timestamp="1583446203677">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.right/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582933882251" />
+    <state width="1876" height="340" key="GridCell.Tab.1.right/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583446203677" />
     <state width="1876" height="340" key="GridCell.Tab.1.right/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582936658520" />
     <state x="682" y="229" key="SettingsEditor" timestamp="1582898077129">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -277,10 +295,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="295" key="extract.method.dialog/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582915999786" />
-    <state x="616" y="250" key="run.anything.popup" timestamp="1582900786984">
+    <state x="616" y="250" key="run.anything.popup" timestamp="1583423777565">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="616" y="250" key="run.anything.popup/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582900786984" />
+    <state x="616" y="250" key="run.anything.popup/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583423777565" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1582900077236">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

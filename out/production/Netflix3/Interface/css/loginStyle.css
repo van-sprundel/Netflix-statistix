@@ -1,0 +1,16 @@
+#loginButton {
+    -fx-background-color: #E50914;
+}
+#loginButton:hover,#loginButton:focused {
+    -fx-background-color: #9c060e;
+}
+#emailField, #passField {
+    -fx-border-color: #666666;
+}
+#emailField:hover, #passField:hover {
+    -fx-border-color: #00e954;
+}
+#emailField:focused, #passField:focused {
+    -fx-text-fill: white;
+    -fx-highlight-text-fill: white;
+}
