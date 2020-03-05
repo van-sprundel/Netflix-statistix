@@ -21,7 +21,7 @@ public class PanelSelect extends Application implements Initializable {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent login = FXMLLoader.load(getClass().getResource("Interface/tableView.fxml"));
+        Parent login = FXMLLoader.load(getClass().getResource("Interface/loginPanel.fxml"));
 //        Parent table = FXMLLoader.load(getClass().getResource("Interface/Login.fxml"));
         // Set all panels
         stage.getIcons().add(new Image("/Sprites/Logo.png"));

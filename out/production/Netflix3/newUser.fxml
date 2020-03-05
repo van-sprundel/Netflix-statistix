@@ -91,7 +91,7 @@
             </VBox>
                 <Button id="loginButton" fx:id="signup" alignment="CENTER" contentDisplay="CENTER" defaultButton="false" disable="false" ellipsisString="" focusTraversable="false" graphicTextGap="0.0" mnemonicParsing="false" onMouseClicked="#setAccount" prefHeight="25.0" prefWidth="150.0" style="" text="Sign up" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" underline="false" visible="true" wrapText="false">
                     <stylesheets>
-                        <URL value="@../loginStyle.css" />
+                        <URL value="@loginStyle.css" />
                     </stylesheets>
                 </Button>
             <Text fx:id="errorCreate" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">

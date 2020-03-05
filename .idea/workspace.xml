@@ -7,27 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6dea6b6-4ffa-4efa-88eb-637d1e736129" name="Default Changelist" comment="ut it">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4be23e09-8241-4233-983c-5128d183ef9e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4be23e09-8241-4233-983c-5128d183ef9e/storage_v2/_src_/database/Netflix_Statistix_Database.hP2h9A.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4be23e09-8241-4233-983c-5128d183ef9e/storage_v2/_src_/database/Netflix_Statistix_Database.hP2h9A/schema/dbo.sYMBAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/tableView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/tableView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/LoginPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/LoginPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/loginWhite.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/loginWhite.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/newUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/newUser.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/LoginPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/LoginPanel.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Netflix3/PanelSelect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/PanelSelect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/RWDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/RWDatabase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/TVLoader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/TableController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/TableController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/tableView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/tableView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/tableView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/tableView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/loginWhite.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/loginWhite.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/newUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/newUser.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/LoginPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/LoginPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/loginWhite.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/loginWhite.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/newUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/newUser.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanelSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelSelect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RWDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RWDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TVLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TableController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,9 +96,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ramon\Documents\IdeaProjects\Netflix3\src\Sprites" />
       <recent name="C:\Users\ramon\Documents\IdeaProjects\Netflix3\src" />
       <recent name="C:\Users\ramon\Documents\IdeaProjects\Netflix3\src\Interface" />
+      <recent name="C:\Users\ramon\Documents\IdeaProjects\Netflix3\src\Sprites" />
       <recent name="C:\Users\ramon\Documents\IdeaProjects\TMCProjects\avansbreda-programmeren_2-2019-2020\Netflix3\src" />
     </key>
   </component>
@@ -194,6 +186,10 @@
       <workItem from="1582940803131" duration="531000" />
       <workItem from="1582983932084" duration="1514000" />
       <workItem from="1583067188693" duration="17000" />
+      <workItem from="1583344635421" duration="285000" />
+      <workItem from="1583345939948" duration="609000" />
+      <workItem from="1583418720609" duration="80000" />
+      <workItem from="1583418874908" duration="350000" />
     </task>
     <servers />
   </component>
@@ -229,25 +225,25 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="281" key="FileChooserDialogImpl/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583067201021" />
-    <state width="1876" height="248" key="GridCell.Tab.0.bottom" timestamp="1582985912752">
+    <state width="1876" height="248" key="GridCell.Tab.0.bottom" timestamp="1583418998047">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="248" key="GridCell.Tab.0.bottom/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582985912752" />
+    <state width="1876" height="248" key="GridCell.Tab.0.bottom/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583418998047" />
     <state width="1876" height="248" key="GridCell.Tab.0.bottom/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582938329497" />
-    <state width="1876" height="248" key="GridCell.Tab.0.center" timestamp="1582985912751">
+    <state width="1876" height="248" key="GridCell.Tab.0.center" timestamp="1583418998046">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="248" key="GridCell.Tab.0.center/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582985912751" />
+    <state width="1876" height="248" key="GridCell.Tab.0.center/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583418998046" />
     <state width="1876" height="248" key="GridCell.Tab.0.center/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582938329497" />
-    <state width="1876" height="248" key="GridCell.Tab.0.left" timestamp="1582985912751">
+    <state width="1876" height="248" key="GridCell.Tab.0.left" timestamp="1583418998046">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="248" key="GridCell.Tab.0.left/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582985912751" />
+    <state width="1876" height="248" key="GridCell.Tab.0.left/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583418998046" />
     <state width="1876" height="248" key="GridCell.Tab.0.left/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582938329497" />
-    <state width="1876" height="248" key="GridCell.Tab.0.right" timestamp="1582985912752">
+    <state width="1876" height="248" key="GridCell.Tab.0.right" timestamp="1583418998046">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="248" key="GridCell.Tab.0.right/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582985912752" />
+    <state width="1876" height="248" key="GridCell.Tab.0.right/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583418998046" />
     <state width="1876" height="248" key="GridCell.Tab.0.right/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582938329497" />
     <state width="1876" height="340" key="GridCell.Tab.1.bottom" timestamp="1582936658520">
       <screen x="1920" y="444" width="1920" height="1080" />
