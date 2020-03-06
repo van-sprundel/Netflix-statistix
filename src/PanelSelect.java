@@ -103,7 +103,7 @@ public class PanelSelect extends Application implements Initializable {
             Stage stage;
             Parent root;
             if (database.checkAdmin(inputEmail, inputPass) == 1) {
-                root = FXMLLoader.load(getClass().getResource("Interface/tableView.fxml"));
+                root = FXMLLoader.load(getClass().getResource("Interface/newTable.fxml"));
             } else {
                 root = FXMLLoader.load(getClass().getResource("Interface/mainMenu.fxml"));
             }
