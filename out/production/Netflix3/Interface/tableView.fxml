@@ -23,7 +23,7 @@
             </Label>
             <ScrollPane fitToHeight="true" fitToWidth="true" layoutY="35.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="62.0">
                <content>
-                  <TableView fx:id="accounts" onMouseClicked="#selProfile" />
+                  <TableView fx:id="accounts" onMouseClicked="#selData" />
                </content>
             </ScrollPane>
          </children>

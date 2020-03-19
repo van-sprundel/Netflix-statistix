@@ -7,7 +7,7 @@
     -fx-text-fill: #DCDCDC;
 }
 
-.button, .scroll-bar {
+.button, .scroll-bar, #titlebar {
     -fx-background-color: #111111;
 }
 
@@ -17,7 +17,7 @@
 
 .table-view, .button {
     -fx-border-color: #828790;
-    -fx-border-radius: 1px;
+    -fx-border-radius: 1;
 }
 
 .table-view:hover, .button:hover {
@@ -47,12 +47,15 @@
     -fx-background-color: transparent;
     -fx-text-fill: white;
 }
+
 .table-row-cell:hover {
     -fx-background-color: #111111;
 }
+
 .table-row-cell:selected {
     -fx-background-color: #111111;
 }
+
 .table-view .column-header {
     -fx-background-color: transparent;
 }
@@ -61,4 +64,8 @@
     -fx-font-weight: bold;
     -fx-font-size: 11px;
     -fx-text-fill: white;
+}
+
+#menuClose, #menuMaximize, #menuMinimize {
+    -fx-border-color: rgba(0, 0, 0, 0);
 }

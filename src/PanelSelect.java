@@ -9,14 +9,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
-import javafx.scene.input.KeyCode;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -28,6 +24,7 @@ public class PanelSelect extends Application implements Initializable {
     @Override
     public void start(Stage stage) throws Exception {
         Parent login = FXMLLoader.load(getClass().getResource("Interface/newTable.fxml"));
+        stage.initStyle(StageStyle.TRANSPARENT);
 //        Parent table = FXMLLoader.load(getClass().getResource("Interface/Login.fxml"));
         // Set all panels
         stage.getIcons().add(new Image("/Sprites/Logo.png"));

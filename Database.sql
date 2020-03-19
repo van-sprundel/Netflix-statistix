@@ -63,6 +63,14 @@ WatchedTime TIME,
 INSERT INTO Account(Email,Name,Address,Postalcode,Password,Admin)
 VALUES('admin@gmail.com','admin','John Doe Lane 01','1234AB','password',1);
 
+/* Optionally you can add generated users into the system. */
+INSERT INTO Account(Email,Name,Address,Postalcode,Password,Admin)
+VALUES('user1@gmail.com','user1','John Doe Lane 01','1234AB','password',0);
+INSERT INTO Account(Email,Name,Address,Postalcode,Password,Admin)
+VALUES('user2@gmail.com','user2','John Doe Lane 02','1234AB','password',0);
+INSERT INTO Account(Email,Name,Address,Postalcode,Password,Admin)
+VALUES('user3@gmail.com','user3','John Doe Lane 03','1234AB','password',0);
+
 /* Here are some sample movies and series mixed. You can add your own to your liking. Follow the syntax. */
 INSERT INTO Series(Name,Genre,Language,MinAge)
 VALUES('Sherlock','Detective','Engels',12);

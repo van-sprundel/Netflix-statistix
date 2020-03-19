@@ -70,16 +70,25 @@ public class RWDatabase {
         return admin;
     }
 
-    public void delAccount(String email, String pass) {
+    public void delAccount(String position) {
         String tempCode = "USE [Netflix Statistix Database];" +
                 "DELETE FROM Account " +
-                "WHERE Email = " + "'" + email + "'" + " AND " +
-                "WHERE Password = " + "'" + pass + "'";
+                "WHERE AccountID = " + "'" + position + "'";
         makeConnection(tempCode);
     }
 
-    public void requestPass(String name) {
-        /* TODO */
+    public void delSerie(String position) {
+        String tempCode = "USE [Netflix Statistix Database];" +
+                "DELETE FROM Series " +
+                "WHERE ShowID = " + "'" + position + "'";
+        makeConnection(tempCode);
     }
+    public void delMovie(String position) {
+        String tempCode = "USE [Netflix Statistix Database];" +
+                "DELETE FROM Movies " +
+                "WHERE MovieID = " + "'" + position + "'";
+        makeConnection(tempCode);
+    }
+
 
 }
