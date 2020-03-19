@@ -100,7 +100,7 @@ public class PanelSelect extends Application implements Initializable {
             Stage stage;
             Parent root;
             if (database.checkAdmin(inputEmail, inputPass) == 1) {
-                root = FXMLLoader.load(getClass().getResource("Interface/tableView.fxml"));
+                root = FXMLLoader.load(getClass().getResource("Interface/newTable.fxml"));
             } else {
                 root = FXMLLoader.load(getClass().getResource("Interface/mainMenu.fxml"));
             }
@@ -108,7 +108,7 @@ public class PanelSelect extends Application implements Initializable {
             Scene scene = new Scene(root);
             stage.setMaximized(false);
             stage.setScene(scene);
-            stage.sizeToScene();
+            stage.centerOnScreen();
             stage.show();
         } else {
             error.setText("Login failed");

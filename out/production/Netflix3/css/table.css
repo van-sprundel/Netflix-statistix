@@ -5,6 +5,7 @@
 
 .tab .tab-label, .label, .button, .scroll-pane {
     -fx-text-fill: #DCDCDC;
+    -fx-text-alignment: right;
 }
 
 .button, .scroll-bar, #titlebar {
@@ -26,13 +27,6 @@
 
 .table-row-cell:odd {
     -fx-background-color: #212121;
-
-}
-
-.table-row-cell:selected {
-    -fx-background-color: #005797;
-    -fx-background-insets: 0;
-    -fx-background-radius: 1;
 }
 
 .table-view .column-header-background, .table-row-cell:even {
