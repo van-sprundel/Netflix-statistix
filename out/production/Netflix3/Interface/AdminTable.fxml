@@ -91,7 +91,7 @@
                             <children>
                                 <HBox layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
                                     <children>
-                                        <Button mnemonicParsing="false" prefHeight="40.0" text="New Account" />
+                                        <Button mnemonicParsing="false" onMouseClicked="#openCreateAccount" prefHeight="40.0" text="New Account" />
                                         <Button mnemonicParsing="false" prefHeight="40.0" text="New Profile" />
                                         <Button mnemonicParsing="false" onMouseClicked="#refresh" prefHeight="40.0" text="Refresh" />
                                         <Button mnemonicParsing="false" onMouseClicked="#delData" prefHeight="40.0" text="Delete Selected" />
@@ -181,6 +181,7 @@
                                         </AnchorPane>
                                     </children>
                                 </GridPane>
+                        <Text fx:id="error" fill="RED" layoutX="371.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.leftAnchor="380.0" AnchorPane.topAnchor="22.5" />
                             </children>
                         </AnchorPane>
                     </content>

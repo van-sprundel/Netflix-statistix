@@ -1,27 +1,43 @@
-.root, .tab-pane, .viewport, .tab-pane, .tab-header-area, .tab-header-background, .column-header-background, .tab, .table-view, .filler {
+.root,
+.tab-pane,
+.viewport,
+.tab-pane,
+.tab-header-area,
+.tab-header-background,
+.column-header-background,
+.tab,
+.table-view,
+.filler {
     -fx-background-color: #222222;
     -fx-font-weight: bold;
 }
 
-.tab .tab-label, .label, .button, .scroll-pane {
+.tab .tab-label,
+.label,
+.button,
+.scroll-pane {
     -fx-text-fill: #DCDCDC;
-    -fx-text-alignment: right;
 }
 
-.button, .scroll-bar, #titlebar {
+.button,
+.scroll-bar,
+#titlebar {
     -fx-background-color: #111111;
 }
 
-.button:hover, .scroll-bar .thumb {
+.button:hover,
+.scroll-bar .thumb {
     -fx-background-color: #333333;
 }
 
-.table-view, .button {
+.table-view,
+.button {
     -fx-border-color: #828790;
     -fx-border-radius: 1;
 }
 
-.table-view:hover, .button:hover {
+.table-view:hover,
+.button:hover {
     -fx-border-color: #ffe6e6;
 }
 
@@ -29,7 +45,8 @@
     -fx-background-color: #212121;
 }
 
-.table-view .column-header-background, .table-row-cell:even {
+.table-view .column-header-background,
+.table-row-cell:even {
     -fx-background-color: #222222;
 }
 
@@ -60,6 +77,8 @@
     -fx-text-fill: white;
 }
 
-#menuClose, #menuMaximize, #menuMinimize {
+#menuClose,
+#menuMaximize,
+#menuMinimize {
     -fx-border-color: rgba(0, 0, 0, 0);
 }

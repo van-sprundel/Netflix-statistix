@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 
@@ -49,13 +50,11 @@ public class TableController implements Initializable {
 
     double x, y;
     int selectedTable; //1 account, 2 profile, 3 series, 4 movies
-    private String dataType;
-    private ObservableList obsType;
-    private TableView tableType;
-    private String exSQL;
+    String pos; // position of id of table row
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        refresh();
     }
 
 
@@ -120,8 +119,7 @@ public class TableController implements Initializable {
         if (selectedTable == 1) {
             System.out.println("Listing accs");
             return aAccounts.getSelectionModel().getSelectedItem().toString();
-        }
-        else if (selectedTable == 3) {
+        } else if (selectedTable == 3) {
             System.out.println("Listing series");
             return aSeries.getSelectionModel().getSelectedItem().toString();
         } else {
@@ -131,10 +129,6 @@ public class TableController implements Initializable {
     }
 
     public void delData() {
-        // Splits data into before and after comma
-        String splitted[] = selData().split(",", 2);
-        // Gets left section and removes bracket
-        String pos = splitted[0].replace("[", "");
         if (selectedTable == 1) {
             database.delAccount(pos);
             System.out.println("Deleting account with ID: " + pos);
@@ -145,11 +139,7 @@ public class TableController implements Initializable {
             database.delMovie(pos);
             System.out.println("Deleting movie with ID: " + pos);
         }
-
         refresh();
-    }
-
-    public void addProfile() {
     }
 
     public void openRep() throws IOException {
@@ -162,15 +152,37 @@ public class TableController implements Initializable {
 
     public void selAccTable() {
         selectedTable = 1;
+        // Splits data into before and after comma
+        String splitted[] = selData().split(",", 2);
+        // Gets left section and removes bracket
+        pos = splitted[0].replace("[", "");
+        System.out.println(pos);
     }
+
     public void selProTable() {
         selectedTable = 2;
+        // Splits data into before and after comma
+        String splitted[] = selData().split(",", 2);
+        // Gets left section and removes bracket
+        pos = splitted[0].replace("[", "");
+        System.out.println(pos);
     }
+
     public void selSerTable() {
         selectedTable = 3;
+        // Splits data into before and after comma
+        String splitted[] = selData().split(",", 2);
+        // Gets left section and removes bracket
+        pos = splitted[0].replace("[", "");
+        System.out.println(pos);
     }
+
     public void selMovTable() {
-        selectedTable = 4;
+        // Splits data into before and after comma
+        String splitted[] = selData().split(",", 2);
+        // Gets left section and removes bracket
+        pos = splitted[0].replace("[", "");
+        System.out.println(pos);
     }
 
     // Menu section
@@ -204,6 +216,12 @@ public class TableController implements Initializable {
 
     }
 
+    // All FXML Methods and variables
+    @FXML
+    public Text error;
 
-
+    public void openCreateAccount() throws IOException {
+        TabMonitor tabMonitor = new TabMonitor();
+        tabMonitor.newUser();
+    }
 }

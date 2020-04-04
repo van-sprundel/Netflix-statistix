@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="320.0" style="-fx-background-color: #EDEDED;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PanelSelect">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="320.0" style="-fx-background-color: #EDEDED;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Account">
     <children>
         <FlowPane alignment="CENTER" hgap="100.0" layoutX="37.0" layoutY="9.0" minHeight="350.0" prefWidth="250.0" translateY="-40.0" vgap="20.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="9.0">
             <children>
