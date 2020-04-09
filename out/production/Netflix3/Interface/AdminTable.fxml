@@ -91,8 +91,6 @@
                             <children>
                                 <HBox layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
                                     <children>
-                                        <Button mnemonicParsing="false" onMouseClicked="#openCreateAccount" prefHeight="40.0" text="New Account" />
-                                        <Button mnemonicParsing="false" prefHeight="40.0" text="New Profile" />
                                         <Button mnemonicParsing="false" onMouseClicked="#refresh" prefHeight="40.0" text="Refresh" />
                                         <Button mnemonicParsing="false" onMouseClicked="#delData" prefHeight="40.0" text="Delete Selected" />
                                     </children>
@@ -191,7 +189,6 @@
                             <children>
                                 <HBox AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
                                     <children>
-                                        <Button mnemonicParsing="false" prefHeight="40.0" text="New Movie" />
                                         <Button mnemonicParsing="false" onMouseClicked="#refresh" prefHeight="40.0" text="Refresh" />
                                         <Button mnemonicParsing="false" onMouseClicked="#delData" prefHeight="40.0" text="Delete Selected" />
                                     </children>
@@ -290,7 +287,6 @@
                             <children>
                                 <HBox AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
                                     <children>
-                                        <Button mnemonicParsing="false" prefHeight="40.0" text="New Movie" />
                                         <Button mnemonicParsing="false" onMouseClicked="#refresh" prefHeight="40.0" text="Refresh" />
                                         <Button mnemonicParsing="false" onMouseClicked="#delData" prefHeight="40.0" text="Delete Selected" />
                                     </children>
@@ -357,22 +353,6 @@
                         </AnchorPane>
                     </content>
                 </Tab>
-                <Tab closable="false" text="Tools">
-                    <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <TextFlow>
-                           <children>
-                              <Text fill="WHITE" layoutX="464.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I would've probably added tools... maybe" wrappingWidth="900.0">
-                                 <font>
-                                    <Font size="18.0" />
-                                 </font>
-                              </Text>
-                           </children>
-                        </TextFlow>
-                     </children></AnchorPane>
-                    </content>
-                </Tab>
                 <Tab closable="false" text="About">
                     <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0">
@@ -423,7 +403,7 @@
                         </TextFlow>
                         <TextFlow layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="60.0">
                            <children>
-                              <Text fill="#dd6449" strokeType="OUTSIDE" strokeWidth="0.0" text="Please don't disturb the author, as this is not a serious project, and therefore I will not support this program for longer than needed." wrappingWidth="900.0">
+                              <Text fill="#dd6449" strokeType="OUTSIDE" strokeWidth="0.0" text="Please don't disturb the author, as this is not an official project, and therefore will not support this program for longer than needed." wrappingWidth="900.0">
                                  <font>
                                     <Font size="18.0" />
                                  </font>

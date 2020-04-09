@@ -27,7 +27,7 @@ CREATE TABLE Profile
 CREATE TABLE Series
 (
     SerieID   int IDENTITY (1,1) PRIMARY KEY,
-    Name     NVARCHAR(25) NOT NULL,
+    Title     NVARCHAR(25) NOT NULL,
     Genre    NVARCHAR(20) NOT NULL,
     Language NVARCHAR(20) NOT NULL,
     MinAge   int          NOT NULL,
@@ -50,7 +50,6 @@ CREATE TABLE Movies
     Genre    NVARCHAR(20) NOT NULL,
     Language NVARCHAR(20) NOT NULL,
     MinAge   int          NOT NULL,
-    SerieID int FOREIGN KEY REFERENCES Series(SerieID)
 )
 
 CREATE TABLE WatchedMovies
@@ -84,7 +83,7 @@ VALUES (2, 'user2 profile', '06-15-2000');
 /* Here are some sample movies and series mixed. You can add your own to your liking. Follow the syntax. */
 
 /* Sherlock Dataset */
-INSERT INTO Series(Name, Genre, Language, MinAge)
+INSERT INTO Series(Title, Genre, Language, MinAge)
 VALUES ('Sherlock', 'Detective', 'Engels', 12);
 INSERT INTO Episode(SerieID, Season, Title, Duration)
 VALUES (1,1, 'A Study in Pink', '01:28');
@@ -105,12 +104,12 @@ VALUES (1,3, 'The Sign of Three', '01:28');
 INSERT INTO Episode(SerieID, Season, Title, Duration)
 VALUES (1,3, 'His Last Vow', '01:28');
 
-/* Sherlock Film Dataset */
-INSERT INTO Movies(Title, Duration, Genre, Language, MinAge, SerieID)
-VALUES ('The Aboniminale Bride', '01:34', 'Humor', 'Engels', 0, 1);
+/* Sherlock Special Dataset */
+INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
+VALUES ('The Abominable Bride', '01:29', 'Detective', 'Engels', 12);
 
 /* Breaking Bad Dataset */
-INSERT INTO Series(Name, Genre, Language, MinAge)
+INSERT INTO Series(Title, Genre, Language, MinAge)
 VALUES ('Breaking bad', 'Spanning', 'Engels-Amerikaans', 16);
 INSERT INTO Episode(SerieID, Season, Title, Duration)
 VALUES (2,1, 'Pilot', '00:58');
@@ -153,8 +152,28 @@ VALUES (2,2, 'Phoenix', '00:48');
 INSERT INTO Episode(SerieID, Season, Title, Duration)
 VALUES (2,2, 'ABQ', '00:48');
 
+/* Other Movies */
 INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
-VALUES ('The Life of Brian', '01:34', 'Humor', 'Engels', 0);
+VALUES ('The Life of Brian', '01:34:00', 'Humor', 'Engels', 12);
+INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
+VALUES ('Pulp Fiction', '02:34:00', 'Misdaad', 'Engels-Amerikaans', 16);
+INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
+VALUES ('Pruimebloesem', '01:20:00', 'Erotiek', 'Nederlands', 18);
+INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
+VALUES ('Reservoir Dogs', '01:39:00', 'Misdaad', 'Engels-Amerikaans', 16);
+INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
+VALUES ('The Good, the Bad and the Ugly', '02:41:00', 'Western', 'Engels-Amerikaans', 12);
+INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
+VALUES ('Andy Warhols Dracula', '01:43:00', 'Humor', 'Engels-Amerikaans', 12);
+INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
+VALUES ('Ober', '01:37:00', 'Humor', 'Nederlands', 6);
+INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
+VALUES ('Der Untergang', '02:58:00', 'Oorlog', 'Duits', 6);
+INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
+VALUES ('De helaasheid der dingen', '01:48:00', 'Humor', 'Vlaams', 12);
+INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
+VALUES ('A Clockwork Orange', '02:16:00', 'SF', 'Engels', 12);
 
+/* Profile has seen this movie */
 INSERT INTO WatchedMovies(ProfileID, MovieID, WatchedTime)
-VALUES (2, 1, '1:30')
+VALUES (1, 4, '1:30')
