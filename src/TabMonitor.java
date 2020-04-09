@@ -65,6 +65,7 @@ public class TabMonitor extends Application implements Initializable {
             } else {
                 root = FXMLLoader.load(getClass().getResource("Interface/UserTable.fxml"));
             }
+            System.out.println("Validated:" +database.validated);
             stage = (Stage) signin.getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setMaximized(false);

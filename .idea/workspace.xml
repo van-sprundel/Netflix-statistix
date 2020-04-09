@@ -7,35 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6dea6b6-4ffa-4efa-88eb-637d1e736129" name="Default Changelist" comment="ut it">
-      <change afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mssql_jdbc_8_2_2_jre13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mssql_jdbc_7_4_1_jre12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Netflix3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Netflix3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/LoginPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/LoginPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/css/table.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/loginWhite.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/mainMenu.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/newTable.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/AdminTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/AdminTable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/AdminTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/AdminTable.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/newUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Interface/newUser.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Interface/tableView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/LoginPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/LoginPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/PanelSelect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/TableController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/TableController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/css/table.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/loginWhite.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/mainMenu.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/newTable.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/RWDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/RWDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/TabMonitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/TabMonitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/TableController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Netflix3/newUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix3/newUser.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix3/tableView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/loginPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/LoginPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/loginWhite.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/mainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/UserTable.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/newTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/AdminTable.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/newUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/NewUser.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/tableView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PanelSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TabMonitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/AdminTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/AdminTable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/NewUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/NewUser.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RWDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RWDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TabMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TabMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminPanelController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,22 +48,17 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Microsoft SQL Server - @localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Microsoft SQL Server - @localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="Netflix Statistix Database: database" type="ccb7ac2a:MsImplModel$Database" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="autoscrollToSource" value="true" />
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="33d1ee71-b63e-457b-b7a7-c9f5814d4805" />
+    </checked>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -97,7 +84,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="sqlserver&#10;sqlserver.ms" />
+    <property name="DatabaseDriversLRU" value="sqlserver.ms&#10;sqlserver" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -113,7 +100,7 @@
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/tests" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/javafx-sdk-13.0.1/lib" />
+    <property name="last_opened_file_path" value="C:/Program Files/Java/sqljdbc_8.2/enu/mssql-jdbc-8.2.2.jre13.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -125,7 +112,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -185,7 +172,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4ffe4bbf" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -238,7 +235,17 @@
       <workItem from="1584616767166" duration="8000" />
       <workItem from="1584624855320" duration="14888000" />
       <workItem from="1585997792992" duration="2473000" />
-      <workItem from="1586000459661" duration="2405000" />
+      <workItem from="1586000459661" duration="3007000" />
+      <workItem from="1586285388392" duration="7721000" />
+      <workItem from="1586339840206" duration="2778000" />
+      <workItem from="1586437504284" duration="2385000" />
+      <workItem from="1586439947924" duration="206000" />
+      <workItem from="1586440185363" duration="325000" />
+      <workItem from="1586440532420" duration="332000" />
+      <workItem from="1586440882320" duration="130000" />
+      <workItem from="1586441055186" duration="258000" />
+      <workItem from="1586441767343" duration="521000" />
+      <workItem from="1586442435115" duration="39000" />
     </task>
     <servers />
   </component>
@@ -262,10 +269,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="198" key="#SQL_Dialects/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582899507537" />
-    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582909959047">
+    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586442458152">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582909959047" />
+    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586442458152" />
+    <state x="2472" y="642" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1586287925934" />
     <state x="2685" y="687" key="#com.intellij.ide.util.MemberChooser" timestamp="1586001377784">
       <screen x="1920" y="444" width="1920" height="1080" />
     </state>
@@ -279,18 +287,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="689" y="324" key="#com.intellij.ide.util.TreeClassChooserDialog/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1585999370136" />
-    <state x="640" y="268" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582894795974">
+    <state x="640" y="268" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586439889009">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="640" y="268" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582894795974" />
+    <state x="640" y="268" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586439889009" />
     <state x="751" y="381" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585999406718">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="751" y="381" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1585999406718" />
-    <state x="738" y="345" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1582921479846">
+    <state x="738" y="345" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1586342189535">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="738" y="345" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582921479846" />
+    <state x="738" y="345" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586342189535" />
     <state x="672" y="128" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1585999370823">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -299,58 +307,70 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="583" y="48" key="CommitChangelistDialog2/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1584625085027" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1584630636879">
+    <state x="758" y="201" key="ExecutionTargetDialog" timestamp="1586289362469">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1584630636879" />
-    <state width="1876" height="248" key="GridCell.Tab.0.bottom" timestamp="1586002597277">
-      <screen x="1920" y="444" width="1920" height="1080" />
-    </state>
-    <state width="1876" height="248" key="GridCell.Tab.0.bottom/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586000543736" />
-    <state width="1876" height="248" key="GridCell.Tab.0.bottom/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1586002597277" />
-    <state width="1876" height="248" key="GridCell.Tab.0.center" timestamp="1586002597277">
-      <screen x="1920" y="444" width="1920" height="1080" />
-    </state>
-    <state width="1876" height="248" key="GridCell.Tab.0.center/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586000543736" />
-    <state width="1876" height="248" key="GridCell.Tab.0.center/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1586002597277" />
-    <state width="1876" height="248" key="GridCell.Tab.0.left" timestamp="1586002597277">
-      <screen x="1920" y="444" width="1920" height="1080" />
-    </state>
-    <state width="1876" height="248" key="GridCell.Tab.0.left/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586000543735" />
-    <state width="1876" height="248" key="GridCell.Tab.0.left/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1586002597277" />
-    <state width="1876" height="248" key="GridCell.Tab.0.right" timestamp="1586002597277">
-      <screen x="1920" y="444" width="1920" height="1080" />
-    </state>
-    <state width="1876" height="248" key="GridCell.Tab.0.right/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586000543736" />
-    <state width="1876" height="248" key="GridCell.Tab.0.right/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1586002597277" />
-    <state width="1876" height="340" key="GridCell.Tab.1.bottom" timestamp="1583446203677">
+    <state x="758" y="201" key="ExecutionTargetDialog/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586289362469" />
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1586442161134">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.bottom/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583446203677" />
+    <state x="740" y="281" key="FileChooserDialogImpl/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586442161134" />
+    <state width="938" height="248" key="GridCell.Tab.0.bottom" timestamp="1586442288267">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="248" key="GridCell.Tab.0.bottom/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586442288267" />
+    <state width="1876" height="248" key="GridCell.Tab.0.bottom/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1586288060998" />
+    <state width="938" height="248" key="GridCell.Tab.0.center" timestamp="1586442288267">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="248" key="GridCell.Tab.0.center/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586442288267" />
+    <state width="1876" height="248" key="GridCell.Tab.0.center/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1586288060998" />
+    <state width="938" height="248" key="GridCell.Tab.0.left" timestamp="1586442288267">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="248" key="GridCell.Tab.0.left/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586442288267" />
+    <state width="1876" height="248" key="GridCell.Tab.0.left/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1586288060998" />
+    <state width="938" height="248" key="GridCell.Tab.0.right" timestamp="1586442288267">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="248" key="GridCell.Tab.0.right/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586442288267" />
+    <state width="1876" height="248" key="GridCell.Tab.0.right/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1586288060998" />
+    <state width="1876" height="340" key="GridCell.Tab.1.bottom" timestamp="1586293117732">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="340" key="GridCell.Tab.1.bottom/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586293117732" />
     <state width="1876" height="340" key="GridCell.Tab.1.bottom/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582936658520" />
-    <state width="1876" height="340" key="GridCell.Tab.1.center" timestamp="1583446203677">
+    <state width="1876" height="340" key="GridCell.Tab.1.center" timestamp="1586293117732">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.center/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583446203677" />
+    <state width="1876" height="340" key="GridCell.Tab.1.center/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586293117732" />
     <state width="1876" height="340" key="GridCell.Tab.1.center/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582936658520" />
-    <state width="1876" height="340" key="GridCell.Tab.1.left" timestamp="1583446203677">
+    <state width="1876" height="340" key="GridCell.Tab.1.left" timestamp="1586293117732">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.left/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583446203677" />
+    <state width="1876" height="340" key="GridCell.Tab.1.left/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586293117732" />
     <state width="1876" height="340" key="GridCell.Tab.1.left/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582936658520" />
-    <state width="1876" height="340" key="GridCell.Tab.1.right" timestamp="1583446203677">
+    <state width="1876" height="340" key="GridCell.Tab.1.right" timestamp="1586293117732">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.right/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583446203677" />
+    <state width="1876" height="340" key="GridCell.Tab.1.right/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586293117732" />
     <state width="1876" height="340" key="GridCell.Tab.1.right/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1582936658520" />
-    <state x="682" y="229" key="SettingsEditor" timestamp="1584630754196">
+    <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1586439844343">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="682" y="229" key="SettingsEditor/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1584630754196" />
+    <state width="196" height="539" key="HiddenNamespacesPopup/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586439844343" />
+    <state x="682" y="229" key="SettingsEditor" timestamp="1586442166582">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="682" y="229" key="SettingsEditor/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586442166582" />
     <state x="776" y="317" key="chooseDestDirectoryDialog" timestamp="1585999241771">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="776" y="317" key="chooseDestDirectoryDialog/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1585999241771" />
+    <state x="2460" y="639" key="com.intellij.database.dbimport.ImportDialog" timestamp="1586287871383">
+      <screen x="1920" y="444" width="1920" height="1080" />
+    </state>
+    <state x="2460" y="639" key="com.intellij.database.dbimport.ImportDialog/1920.444.1920.1080/0.0.1920.1080@1920.444.1920.1080" timestamp="1586287871383" />
     <state x="664" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585999206726">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -367,6 +387,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="295" key="extract.method.dialog/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582915999786" />
+    <state x="342" y="119" key="new project wizard" timestamp="1586442471133">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="342" y="119" key="new project wizard/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586442471133" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1583423777565">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -375,83 +399,5 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/1920.444.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1584632868501" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>Netflix3</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Netflix3</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>lib1</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

@@ -5,10 +5,10 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.TabPane;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 
@@ -22,10 +22,11 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ResourceBundle;
 
-public class TableController implements Initializable {
+public class AdminPanelController implements Initializable {
     private RWDatabase database = new RWDatabase();
     private ObservableList<ObservableList> dataAcc = FXCollections.observableArrayList();
     private ObservableList<ObservableList> dataSeries = FXCollections.observableArrayList();
+    private ObservableList<ObservableList> dataEpisode = FXCollections.observableArrayList();
     private ObservableList<ObservableList> dataMovies = FXCollections.observableArrayList();
     private ObservableList<ObservableList> dataProf = FXCollections.observableArrayList();
 
@@ -44,12 +45,16 @@ public class TableController implements Initializable {
     public TableView aMovies;
     public TableView mMovies;
 
+    public TableView sEpisode;
+
+    public TabPane tabPane;
+
     public Button btnClose;
     public Button btnMax;
     public Button btnMin;
 
     double x, y;
-    int selectedTable; //1 account, 2 profile, 3 series, 4 movies
+    int selectedTable; //1 account, 2 profile, 3 series, 4 episodes, 5 movies
     String pos; // position of id of table row
 
     @Override
@@ -69,9 +74,9 @@ public class TableController implements Initializable {
             Connection connection = DriverManager.getConnection(database.connectionUrl);
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("USE [Netflix Statistix Database];" +
-                    "SELECT * FROM " + dataType + exSQL);
-            // Add Columns dynamically, counter starts at 1 to skip identifiers
-            for (int i = 1; i < rs.getMetaData().getColumnCount(); i++) {
+                    "SELECT * FROM " + dataType + " " + exSQL);
+
+            for (int i = 0; i < rs.getMetaData().getColumnCount(); i++) {
                 final int j = i;
                 TableColumn col = new TableColumn(rs.getMetaData().getColumnName(i + 1));
                 col.setCellValueFactory((Callback<TableColumn.CellDataFeatures<ObservableList, String>, ObservableValue<String>>) param -> new SimpleStringProperty(param.getValue().get(j).toString()));
@@ -84,10 +89,8 @@ public class TableController implements Initializable {
                 for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
                     row.add(rs.getString(i));
                 }
-                System.out.println("Row [1] added " + row);
                 obsType.add(row);
             }
-            System.out.println(obsType);
             // sets table data to ObservableList
             tableType.setItems(obsType);
 
@@ -111,20 +114,48 @@ public class TableController implements Initializable {
         loadData("Movies", dataMovies, aMovies, "");
         loadData("Movies", dataMovies, mMovies, "");
 
+        loadData("Episode", dataEpisode, sEpisode, "");
+
 //        loadData("Profile", dataProf,profiles);
     }
 
 
     public String selData() {
         if (selectedTable == 1) {
-            System.out.println("Listing accs");
-            return aAccounts.getSelectionModel().getSelectedItem().toString();
+            System.out.println("Listing accounts");
+            if (tabPane.getSelectionModel().getSelectedItem().getText().equals("Accounts")) {
+                return aAccounts.getSelectionModel().getSelectedItem().toString();
+            } else if (tabPane.getSelectionModel().getSelectedItem().getText().equals("Series")) {
+                return sAccounts.getSelectionModel().getSelectedItem().toString();
+            } else {
+                return mAccounts.getSelectionModel().getSelectedItem().toString();
+            }
+        } else if (selectedTable == 2) {
+            System.out.println("Listing profiles");
+            if (tabPane.getSelectionModel().getSelectedItem().getText().equals("Accounts")) {
+                return aProfiles.getSelectionModel().getSelectedItem().toString();
+            } else if (tabPane.getSelectionModel().getSelectedItem().getText().equals("Series")) {
+                return sProfiles.getSelectionModel().getSelectedItem().toString();
+            } else {
+                return mProfiles.getSelectionModel().getSelectedItem().toString();
+            }
         } else if (selectedTable == 3) {
             System.out.println("Listing series");
-            return aSeries.getSelectionModel().getSelectedItem().toString();
+            if (tabPane.getSelectionModel().getSelectedItem().getText().equals("Accounts")) {
+                return aSeries.getSelectionModel().getSelectedItem().toString();
+            } else {
+                return sSeries.getSelectionModel().getSelectedItem().toString();
+            }
+        } else if (selectedTable == 4) {
+            System.out.println("Listing episodes");
+            return sEpisode.getSelectionModel().getSelectedItem().toString();
         } else {
             System.out.println("Listing movies");
-            return aMovies.getSelectionModel().getSelectedItem().toString();
+            if (tabPane.getSelectionModel().getSelectedItem().getText().equals("Accounts")) {
+                return aMovies.getSelectionModel().getSelectedItem().toString();
+            } else {
+                return mMovies.getSelectionModel().getSelectedItem().toString();
+            }
         }
     }
 
@@ -132,9 +163,15 @@ public class TableController implements Initializable {
         if (selectedTable == 1) {
             database.delAccount(pos);
             System.out.println("Deleting account with ID: " + pos);
+        } else if (selectedTable == 2) {
+            database.delProfile(pos);
+            System.out.println("Deleting profile with ID: " + pos);
         } else if (selectedTable == 3) {
             database.delSerie(pos);
             System.out.println("Deleting serie with ID: " + pos);
+        } else if (selectedTable == 4) {
+            database.delEpisode(pos);
+            System.out.println("Deleting episode with ID: " + pos);
         } else {
             database.delMovie(pos);
             System.out.println("Deleting movie with ID: " + pos);
@@ -142,16 +179,20 @@ public class TableController implements Initializable {
         refresh();
     }
 
-    public void openRep() throws IOException {
-        try {
-            java.awt.Desktop.getDesktop().browse(new URI("http://github.com/ramones156"));
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
-    }
-
     public void selAccTable() {
         selectedTable = 1;
+        // Splits data into before and after comma
+        String splitted[] = selData().split(",", 2);
+        // Gets left section and removes bracket
+        pos = splitted[0].replace("[", "");
+        System.out.println("Position: " + pos);
+
+        loadData("Profile", dataProf, aProfiles, "WHERE AccountID = " + pos);
+        loadData("Profile", dataProf, sProfiles, "WHERE AccountID = " + pos);
+        loadData("Profile", dataProf, mProfiles, "WHERE AccountID = " + pos);
+    }
+
+    private void getPos() {
         // Splits data into before and after comma
         String splitted[] = selData().split(",", 2);
         // Gets left section and removes bracket
@@ -161,28 +202,28 @@ public class TableController implements Initializable {
 
     public void selProTable() {
         selectedTable = 2;
-        // Splits data into before and after comma
-        String splitted[] = selData().split(",", 2);
-        // Gets left section and removes bracket
-        pos = splitted[0].replace("[", "");
-        System.out.println(pos);
+        getPos();
+        if (tabPane.getSelectionModel().getSelectedItem().getText().equals("Movies")) {
+            loadData("WatchedMovies RIGHT JOIN Movies ON WatchedMovies.MovieID = Movies.MovieID", dataMovies, mMovies, " WHERE ProfileID = " + pos);
+        }
     }
 
     public void selSerTable() {
         selectedTable = 3;
-        // Splits data into before and after comma
-        String splitted[] = selData().split(",", 2);
-        // Gets left section and removes bracket
-        pos = splitted[0].replace("[", "");
-        System.out.println(pos);
+        getPos();
+        if (tabPane.getSelectionModel().getSelectedItem().getText().equals("Series")) {
+            loadData("Episode", dataEpisode, sEpisode, " WHERE SerieID = " + pos);
+        }
+    }
+
+    public void selEpiTable() {
+        selectedTable = 4;
+        getPos();
     }
 
     public void selMovTable() {
-        // Splits data into before and after comma
-        String splitted[] = selData().split(",", 2);
-        // Gets left section and removes bracket
-        pos = splitted[0].replace("[", "");
-        System.out.println(pos);
+        selectedTable = 5;
+        getPos();
     }
 
     // Menu section
@@ -216,10 +257,16 @@ public class TableController implements Initializable {
 
     }
 
+    public void openRep() throws IOException {
+        try {
+            java.awt.Desktop.getDesktop().browse(new URI("http://github.com/ramones156"));
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+    }
+
     // All FXML Methods and variables
     @FXML
-    public Text error;
-
     public void openCreateAccount() throws IOException {
         TabMonitor tabMonitor = new TabMonitor();
         tabMonitor.newUser();

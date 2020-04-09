@@ -7,7 +7,8 @@ public class RWDatabase {
     public String connectionUrl = "jdbc:sqlserver://localhost:1433;integratedSecurity=true";
     // Account
     private String email;
-    private String name;
+    private String fullname;
+    private String username;
     private String postalCode;
     private String address;
     private byte admin;
@@ -24,26 +25,29 @@ public class RWDatabase {
             ResultSet rs = statement.executeQuery(sqlCode);
             while (rs.next()) {
                 email = rs.getString("Email");
-                name = rs.getString("Name");
+                username = rs.getString("Username");
+                fullname = rs.getString("FullName");
                 address = rs.getString("Address");
                 postalCode = rs.getString("postalCode");
                 admin = rs.getByte("Admin");
+                // If there is something in the list, it will return true
                 validated = true;
-                System.out.format("| %24s | %-24s | %-24s | %-24s | %-2s |\n", email, name, address, postalCode, admin);
+                System.out.format("| %24s | %-24s | %-24s| %-24s | %-24s | %-2s |\n", email, fullname, username, address, postalCode, admin);
             }
-            System.out.println(String.format("| %24s | %-24s | %-24s | %-24s | %-2s |\n", " ", " ", " ", " ", " ").replace(" ", "-"));
+            System.out.println(String.format("| %24s| %-24s | %-24s | %-24s | %-24s | %-2s |\n", " ", " ", " ", " ", " ", " ").replace(" ", "-"));
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Error on Building Data");
         }
     }
 
-    public void setAccount(String email, String name, String address, String postalCode, String pass, byte admin) {
+    public void setAccount(String email, String username, String fullname, String address, String postalCode, String pass, byte admin) {
         String tempCode = "USE [Netflix Statistix Database];" +
-                "INSERT INTO Account(Email,Name,Address,Postalcode,Password,Admin) " +
+                "INSERT INTO Account(Email,Username,Fullname,Address,Postalcode,Password,Admin) " +
                 "VALUES (" +
                 "'" + email + "'" +
-                "," + "'" + name + "'" +
+                "," + "'" + username + "'" +
+                "," + "'" + fullname + "'" +
                 "," + "'" + address + "'" +
                 "," + "'" + postalCode + "'" +
                 "," + "'" + pass + "'" +
@@ -56,7 +60,7 @@ public class RWDatabase {
                 "SELECT * FROM Account " +
                 "WHERE Email = " + "'" + email + "'" + " AND " +
                 "Password = " + "'" + pass + "'" + " OR " +
-                "Name = " + "'" + email + "'" + " AND " +
+                "Username = " + "'" + email + "'" + " AND " +
                 "Password = " + "'" + pass + "'";
         makeConnection(tempCode);
     }
@@ -83,6 +87,7 @@ public class RWDatabase {
                 "WHERE ShowID = " + "'" + position + "'";
         makeConnection(tempCode);
     }
+
     public void delMovie(String position) {
         String tempCode = "USE [Netflix Statistix Database];" +
                 "DELETE FROM Movies " +
@@ -90,5 +95,18 @@ public class RWDatabase {
         makeConnection(tempCode);
     }
 
+    public void delEpisode(String position) {
+        String tempCode = "USE [Netflix Statistix Database];" +
+                "DELETE FROM Episode " +
+                "WHERE EpisodeID = " + "'" + position + "'";
+        makeConnection(tempCode);
+    }
+
+    public void delProfile(String position) {
+        String tempCode = "USE [Netflix Statistix Database];" +
+                "DELETE FROM Profile " +
+                "WHERE ProfileID = " + "'" + position + "'";
+        makeConnection(tempCode);
+    }
 
 }
