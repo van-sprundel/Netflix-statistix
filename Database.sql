@@ -114,15 +114,15 @@ VALUES ('Breaking bad', 'Spanning', 'Engels-Amerikaans', 16);
 INSERT INTO Episode(SerieID, Season, Title, Duration)
 VALUES (2,1, 'Pilot', '00:58');
 INSERT INTO Episode(SerieID, Season, Title, Duration)
-VALUES (2,1, 'Cat is in the bag...', '00:48');
+VALUES (2,1, 'Cat''s in the bag...', '00:48');
 INSERT INTO Episode(SerieID, Season, Title, Duration)
-VALUES (2,1, '...And the Bag is in the River', '00:48');
+VALUES (2,1, '...And the Bag''s in the River', '00:48');
 INSERT INTO Episode(SerieID, Season, Title, Duration)
 VALUES (2,1, 'Cancer Man', '00:48');
 INSERT INTO Episode(SerieID, Season, Title, Duration)
 VALUES (2,1, 'Gray matter', '00:48');
 INSERT INTO Episode(SerieID, Season, Title, Duration)
-VALUES (2,1, 'Crazy handful Of Nothin', '00:48');
+VALUES (2,1, 'Crazy handful Of Nothin''', '00:48');
 INSERT INTO Episode(SerieID, Season, Title, Duration)
 VALUES (2,1, 'A No-Rough-Stuff-Type Deal', '00:48');
 INSERT INTO Episode(SerieID, Season, Title, Duration)
@@ -152,6 +152,49 @@ VALUES (2,2, 'Phoenix', '00:48');
 INSERT INTO Episode(SerieID, Season, Title, Duration)
 VALUES (2,2, 'ABQ', '00:48');
 
+/* Fargo Dataset */
+INSERT INTO Series(Title, Genre, Language, MinAge)
+VALUES ('Fargo', 'Spanning', 'Engels-Amerikaans', 16);
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,1, 'The Crocodile''s Dilemma', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,1, 'The Rooster Prince', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,1, 'A Muddy Road', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,1, 'Eating the Blame', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,1, 'The Six Ungraspables', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,1, 'Buridan''s Ass', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,1, 'Who Shaves the Barber?', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,1, 'The Heap', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,1, 'A Fox, a Rabbit, and a Cabbage', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,1, 'Morton''s Fork', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,2, 'Waiting for Dutch', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,2, 'Before the Law', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,2, 'The Myth of Sisyphus', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,2, 'The Gift of the Magi', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,2, 'Fear and Trembling', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,2, 'Rhinoceros', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,2, 'Did you do this? No, you did it!', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,2, 'Loplop', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,2, 'The Castle', '01:08');
+INSERT INTO Episode(SerieID, Season, Title, Duration)
+VALUES (3,2, 'Palindrome', '01:08');
 /* Other Movies */
 INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
 VALUES ('The Life of Brian', '01:34:00', 'Humor', 'Engels', 12);
@@ -164,7 +207,7 @@ VALUES ('Reservoir Dogs', '01:39:00', 'Misdaad', 'Engels-Amerikaans', 16);
 INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
 VALUES ('The Good, the Bad and the Ugly', '02:41:00', 'Western', 'Engels-Amerikaans', 12);
 INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
-VALUES ('Andy Warhols Dracula', '01:43:00', 'Humor', 'Engels-Amerikaans', 12);
+VALUES ('Andy Warhol''s Dracula', '01:43:00', 'Humor', 'Engels-Amerikaans', 12);
 INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
 VALUES ('Ober', '01:37:00', 'Humor', 'Nederlands', 6);
 INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
@@ -174,6 +217,15 @@ VALUES ('De helaasheid der dingen', '01:48:00', 'Humor', 'Vlaams', 12);
 INSERT INTO Movies(Title, Duration, Genre, Language, MinAge)
 VALUES ('A Clockwork Orange', '02:16:00', 'SF', 'Engels', 12);
 
-/* Profile has seen this movie */
+/* Profile has seen this data */
 INSERT INTO WatchedMovies(ProfileID, MovieID, WatchedTime)
 VALUES (1, 4, '1:30')
+INSERT INTO WatchedEpisodes(ProfileID, EpisodeID, WatchedTime)
+VALUES (1,1, '1:27')
+INSERT INTO WatchedEpisodes(ProfileID, EpisodeID, WatchedTime)
+VALUES (1,2, '1:28')
+INSERT INTO WatchedEpisodes(ProfileID, EpisodeID, WatchedTime)
+VALUES (1,3, '1:05')
+INSERT INTO WatchedEpisodes(ProfileID, EpisodeID, WatchedTime)
+VALUES (1,12, '0:25')
+

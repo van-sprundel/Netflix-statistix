@@ -10,6 +10,7 @@ This program is only local,
 ```bash
 ‘jdbc:sqlserver://localhost\MSSQLSERVER;database=Netflix Statistix Database’
 ```
+- (Optionally if this driver doesn’t work, you can use jTds, it’s more reliable sometimes)
 - Go to Project Structure (CTRL+ALT+SHIFT+S) and select the Java 13 SDK
 - While in the Project Structure, go to Libraries and add both the JDBC Drivers and JavaFX. (make sure you select the lib files)
 - Hit Run Project and select ‘Main’

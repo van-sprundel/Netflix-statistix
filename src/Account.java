@@ -18,13 +18,13 @@ public class Account {
 
     /* Check if account is valid */
     public static void readAccount(String emailInput, String passInput) {
-        RWDatabase database = new RWDatabase();
+        DatabaseAPI database = new DatabaseAPI();
         database.checkAccount(emailInput, passInput);
     }
 
     /* Sign up with validation */
     public void setAccount() {
-        RWDatabase database = new RWDatabase();
+        DatabaseAPI database = new DatabaseAPI();
         String fullname = newFullname.getText();
         String username = newUsername.getText();
         String email = newEmail.getText();
@@ -42,7 +42,7 @@ public class Account {
             if (database.validated) {
                 errorCreate.setText("This account already exists");
             } else {
-                database.setAccount(email, username, fullname, address, postalCode, pass, (byte) 0);
+                database.setAccount(email, username, fullname, address, postalCode, pass);
                 Stage stage = (Stage) signup.getScene().getWindow();
                 stage.close();
             }

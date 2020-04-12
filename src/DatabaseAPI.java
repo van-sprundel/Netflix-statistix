@@ -3,7 +3,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class RWDatabase {
+public class DatabaseAPI {
     public String connectionUrl = "jdbc:sqlserver://localhost:1433;integratedSecurity=true";
     // Account
     private String email;
@@ -12,8 +12,7 @@ public class RWDatabase {
     private String postalCode;
     private String address;
     private byte admin;
-    // Profile
-    private String age;
+
     public boolean validated = false;
 
     public void makeConnection(String sqlCode) {
@@ -30,9 +29,9 @@ public class RWDatabase {
                 address = rs.getString("Address");
                 postalCode = rs.getString("postalCode");
                 admin = rs.getByte("Admin");
+                System.out.format("| %24s | %-24s | %-24s| %-24s | %-24s | %-2s |\n", email, fullname, username, address, postalCode, admin);
                 // If there is something in the list, it will return true
                 validated = true;
-                System.out.format("| %24s | %-24s | %-24s| %-24s | %-24s | %-2s |\n", email, fullname, username, address, postalCode, admin);
             }
             System.out.println(String.format("| %24s| %-24s | %-24s | %-24s | %-24s | %-2s |\n", " ", " ", " ", " ", " ", " ").replace(" ", "-"));
         } catch (Exception e) {
@@ -41,7 +40,7 @@ public class RWDatabase {
         }
     }
 
-    public void setAccount(String email, String username, String fullname, String address, String postalCode, String pass, byte admin) {
+    public void setAccount(String email, String username, String fullname, String address, String postalCode, String pass) {
         String tempCode = "USE [Netflix Statistix Database];" +
                 "INSERT INTO Account(Email,Username,Fullname,Address,Postalcode,Password,Admin) " +
                 "VALUES (" +
@@ -51,33 +50,43 @@ public class RWDatabase {
                 "," + "'" + address + "'" +
                 "," + "'" + postalCode + "'" +
                 "," + "'" + pass + "'" +
-                "," + admin + ")";
+                "," + 0 + ")";
         makeConnection(tempCode);
     }
 
-    public void checkAccount(String email, String pass) {
+    public boolean checkAccount(String input, String pass) {
         String tempCode = "USE [Netflix Statistix Database];" +
                 "SELECT * FROM Account " +
-                "WHERE Email = " + "'" + email + "'" + " AND " +
+                "WHERE Email = " + "'" + input + "'" + " AND " +
                 "Password = " + "'" + pass + "'" + " OR " +
-                "Username = " + "'" + email + "'" + " AND " +
+                "Username = " + "'" + input + "'" + " AND " +
                 "Password = " + "'" + pass + "'";
         makeConnection(tempCode);
+        return validated;
     }
 
-    public byte checkAdmin(String email, String pass) {
+    public byte checkAdmin(String input, String pass) {
         String tempCode = "USE [Netflix Statistix Database];" +
                 "SELECT * FROM Account " +
-                "WHERE Email = " + "'" + email + "'" + " AND " +
+                "WHERE Email = " + "'" + input + "'" + " AND " +
+                "Password = " + "'" + pass + "'" + " OR " +
+                "Username = " + "'" + input + "'" + " AND " +
                 "Password = " + "'" + pass + "'";
         makeConnection(tempCode);
         return admin;
     }
 
-    public void delAccount(String position) {
+    public boolean delAccount(String position) {
         String tempCode = "USE [Netflix Statistix Database];" +
                 "DELETE FROM Account " +
                 "WHERE AccountID = " + "'" + position + "'";
+        makeConnection(tempCode);
+        return validated;
+    }
+    public void delProfile(String position) {
+        String tempCode = "USE [Netflix Statistix Database];" +
+                "DELETE FROM Profile " +
+                "WHERE ProfileID = " + "'" + position + "'";
         makeConnection(tempCode);
     }
 
@@ -102,11 +111,5 @@ public class RWDatabase {
         makeConnection(tempCode);
     }
 
-    public void delProfile(String position) {
-        String tempCode = "USE [Netflix Statistix Database];" +
-                "DELETE FROM Profile " +
-                "WHERE ProfileID = " + "'" + position + "'";
-        makeConnection(tempCode);
-    }
 
 }

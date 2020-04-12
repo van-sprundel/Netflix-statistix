@@ -18,12 +18,11 @@ import java.util.ResourceBundle;
 
 
 public class TabMonitor extends Application implements Initializable {
-    boolean isPopup = false;
+    boolean isPopup = true; // Fixes the new account tab from opening up twice.
 
     @Override
     public void start(Stage stage) throws Exception {
-        Account account = new Account();
-        Parent login = FXMLLoader.load(getClass().getResource("Interface/LoginPanel.fxml"));
+        Parent login = FXMLLoader.load(getClass().getResource("Tables/LoginPanel.fxml"));
         stage.initStyle(StageStyle.TRANSPARENT);
 //        Parent table = FXMLLoader.load(getClass().getResource("Interface/Login.fxml"));
         // Set all panels
@@ -33,7 +32,6 @@ public class TabMonitor extends Application implements Initializable {
         stage.setTitle("2160162");
         stage.setMaximized(true);
         stage.show();
-
     }
 
     @Override
@@ -49,7 +47,7 @@ public class TabMonitor extends Application implements Initializable {
 
     /* Login button trigger */
     public void login() throws IOException {
-        RWDatabase database = new RWDatabase();
+        DatabaseAPI database = new DatabaseAPI();
         String inputEmail = email.getText();
         String inputPass = pass.getText();
         database.checkAccount(inputEmail, inputPass);
@@ -57,13 +55,13 @@ public class TabMonitor extends Application implements Initializable {
             error.setText("Please type in your email");
         } else if (pass.getText().trim().isEmpty()) {
             error.setText("Please type in your password");
-        } else if (database.validated) {
+        } else if (database.checkAccount(inputEmail,inputPass)) {
             Stage stage;
             Parent root;
             if (database.checkAdmin(inputEmail, inputPass) == 1) {
-                root = FXMLLoader.load(getClass().getResource("Interface/AdminTable.fxml"));
+                root = FXMLLoader.load(getClass().getResource("Tables/AdminTable.fxml"));
             } else {
-                root = FXMLLoader.load(getClass().getResource("Interface/UserTable.fxml"));
+                root = FXMLLoader.load(getClass().getResource("Tables/UserTable.fxml"));
             }
             System.out.println("Validated:" +database.validated);
             stage = (Stage) signin.getScene().getWindow();
@@ -83,16 +81,16 @@ public class TabMonitor extends Application implements Initializable {
 
     /* Popup to create account */
     public void newUser() throws IOException {
-        if (!isPopup) {
-            isPopup = true;
+        if (isPopup) {
+            isPopup = false;
 
-            Stage popupwindow = new Stage();
-            Parent root = FXMLLoader.load(getClass().getResource("Interface/NewUser.fxml"));
+            Stage popupWindow = new Stage();
+            Parent root = FXMLLoader.load(getClass().getResource("Tables/NewUser.fxml"));
             Scene scene = new Scene(root);
 
-            popupwindow.setTitle("Create account");
-            popupwindow.setScene(scene);
-            popupwindow.showAndWait();
+            popupWindow.setTitle("Create account");
+            popupWindow.setScene(scene);
+            popupWindow.showAndWait();
             isPopup = false;
         } else {
             TabMonitor tabMonitor = new TabMonitor();

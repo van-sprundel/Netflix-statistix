@@ -23,7 +23,7 @@ import java.sql.Statement;
 import java.util.ResourceBundle;
 
 public class AdminPanelController implements Initializable {
-    private RWDatabase database = new RWDatabase();
+    private DatabaseAPI database = new DatabaseAPI();
     private ObservableList<ObservableList> dataAcc = FXCollections.observableArrayList();
     private ObservableList<ObservableList> dataSeries = FXCollections.observableArrayList();
     private ObservableList<ObservableList> dataEpisode = FXCollections.observableArrayList();
@@ -119,7 +119,6 @@ public class AdminPanelController implements Initializable {
 //        loadData("Profile", dataProf,profiles);
     }
 
-
     public String selData() {
         if (selectedTable == 1) {
             System.out.println("Listing accounts");
@@ -191,7 +190,7 @@ public class AdminPanelController implements Initializable {
         loadData("Profile", dataProf, sProfiles, "WHERE AccountID = " + pos);
         loadData("Profile", dataProf, mProfiles, "WHERE AccountID = " + pos);
     }
-
+    // Gets the position of the item in the table
     private void getPos() {
         // Splits data into before and after comma
         String splitted[] = selData().split(",", 2);
@@ -200,6 +199,7 @@ public class AdminPanelController implements Initializable {
         System.out.println(pos);
     }
 
+    // Gets called when you select the Profile table
     public void selProTable() {
         selectedTable = 2;
         getPos();
@@ -207,7 +207,7 @@ public class AdminPanelController implements Initializable {
             loadData("WatchedMovies RIGHT JOIN Movies ON WatchedMovies.MovieID = Movies.MovieID", dataMovies, mMovies, " WHERE ProfileID = " + pos);
         }
     }
-
+    // Gets called when you select the Series table
     public void selSerTable() {
         selectedTable = 3;
         getPos();
@@ -216,11 +216,13 @@ public class AdminPanelController implements Initializable {
         }
     }
 
+    // Gets called when you select the Episode table
     public void selEpiTable() {
         selectedTable = 4;
         getPos();
     }
 
+    // Gets called when you select the Movies table
     public void selMovTable() {
         selectedTable = 5;
         getPos();
@@ -235,7 +237,6 @@ public class AdminPanelController implements Initializable {
     public void max() {
         Stage stage = (Stage) btnClose.getScene().getWindow();
         stage.setMaximized(!stage.isMaximized());
-
     }
 
     public void min() {
@@ -254,7 +255,6 @@ public class AdminPanelController implements Initializable {
             stage.setX(event.getScreenX() - x);
             stage.setY(event.getScreenY() - y);
         }
-
     }
 
     public void openRep() throws IOException {
@@ -263,12 +263,5 @@ public class AdminPanelController implements Initializable {
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
-    }
-
-    // All FXML Methods and variables
-    @FXML
-    public void openCreateAccount() throws IOException {
-        TabMonitor tabMonitor = new TabMonitor();
-        tabMonitor.newUser();
     }
 }
