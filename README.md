@@ -1,8 +1,7 @@
 # NETFLIX STATISTIX
 Netflix Statistix is a program designed to track statistics of user profiles in the Netflix database.
 This program is only local, but is optimised to work a dedicated server.
-and movies.
-This program is only local, 
+
 ## Installation
 - Start your IDE and open the repository
 - Follow the instructions in the SQL Code
